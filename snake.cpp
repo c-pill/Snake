@@ -149,22 +149,22 @@ void Logic()
     switch(dir) {
         case LEFT:
             x--;
-            usleep(15000);
+            usleep(60000);
             Draw();
             break;
         case RIGHT: 
             x++;
-            usleep(15000);
+            usleep(60000);
             Draw();
             break;
         case UP:
             y--;
-            usleep(30000);
+            usleep(60000);
             Draw();
             break;
         case DOWN:
             y++;
-            usleep(30000);
+            usleep(60000);
             Draw();
             break;
         default:
@@ -235,7 +235,8 @@ int main()
                 }
             }
         }
-        play = false;
+        else
+            play = false;
     }
 
     cout << "\e[?25h";
